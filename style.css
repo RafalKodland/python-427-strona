@@ -1,3 +1,17 @@
+@keyframes color-change {
+    0% {
+        color: blue;
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -6,6 +20,27 @@ h1 {
     font-size: 50px;
     color: blue;
     background-color: antiquewhite;
+}
+
+.react {
+    display: inline;
+    border: 5px solid red;
+    background-color: red;
+    color: yellow;
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+
+.react:hover {
+    border: 5px solid yellow;
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    transition: all 0.7s;
+}
+
+.color-anim {
+    animation: color-change 3s infinite;
 }
 
 .green {
